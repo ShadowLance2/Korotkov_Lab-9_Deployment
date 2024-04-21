@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <header>
+        <div class="container">
+            <img class="logo" src="img/logo.png" alt="pic">
+            <div class="wrapper">
+                <div class="offer">
+                    <h1 class="title animate__animated animate__rubberBand animate__infinite"><strong>С помощью нас<br>вы сможете создать то, о чем</strong></h1>
+                    <span class="title__span"><strong>желаете!</strong></span>
+                    <p class="offer__text">Наши возможности
+                        + опыт позволят Вам достичь огромного
+                        успеха. Мы верим в вас! И знаем это на
+                        все 100%. Вас не остановить!</p>
+                        <a href="#" class="btn animate__animated animate__pulse animate__infinite">Узнать больше ...</a>
+                </div>
+                <img class="header__img" src="img/header-img.png" alt="pic">
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h2 class="main__title">Что Вам необходимо?</h2>
+            <div class="main__block">
+                <div class="blocks">
+                    <img src="img/f3.png" alt="pic">
+                    <h3>Первый блок</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit.</p>
+                </div>
+                <div class="blocks">
+                    <img src="img/f4.png" alt="pic">
+                    <h3>Второй блок</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit?</p>
+                </div>
+                <div class="blocks">
+                    <img src="img/f5.png" alt="pic">
+                    <h3>Третий блок</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="new-form">
+        <div class="new-form__container">
+            <h2 class="new-form__title">Форма заказа продукта или услуги</h2>
+            <form class="new-form__fields" action="#" method="post" onsubmit="return validateNewForm()">
+                <input name="product" id="product" placeholder="Наименование продукта или услуги">
+                <input type="number" name="quantity" id="quantity" placeholder="Количество" min="1" step="1">
+                <input name="client-name" id="client-name" placeholder="Ваше имя">
+                <input name="client-email" id="client-email" placeholder="Ваш Email">
+                <input name="client-phone" id="client-phone" placeholder="Ваш телефон" title="Формат телефона: +XXXXXXXXXXXX">
+                <input name="delivery-date" id="delivery-date" placeholder="Дата доставки">
+                <input name="delivery-time" id="delivery-time" placeholder="Время доставки">
+                <select name="payment-method" id="payment-method">
+                    <option value="" disabled selected>Выберите способ оплаты</option>
+                    <option value="cash">Наличные</option>
+                    <option value="card">Карта</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+                <textarea name="additional-info" id="additional-info" placeholder="Дополнительная информация"></textarea>
+                <button type="submit" class="btn btn--submit">Отправить заказ</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <section class="form">
+        <div class="form__container">
+            <h2 class="form__title">Форма заказа обратного звонка</h2>
+            <form class="form__fields" action="#" method="post">
+                <input type="text" name="name" placeholder="Имя" required>
+                <input type="email" name="email" placeholder="Введите свой E-mail" required>
+                <input type="tel" name="phone" placeholder="Телефон +XXXXXXXXXXXX" pattern="^\+[0-9]{11}$" title="Формат телефона: +XXXXXXXXXXXX" required>
+                <input type="text" name="topic" placeholder="Какая тема вас интересует?" required>
+                <button type="submit" class="btn btn--submit">Отправить вопрос!</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <p><small>&copy;</small> Все на этом сайте защищено</p>
+    </section>
+
+    <script src="js/validation.js"></script>
+</body>
+
+</html>
