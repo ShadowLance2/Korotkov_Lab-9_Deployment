@@ -1,0 +1,366 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+header {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%,
+     rgb(70,70,221) 0%, rgba(0,212,255,1) 100%);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white
+}
+
+.offer {
+    width: 500px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.title strong {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold; 
+}
+
+
+.title__span {
+    font-size: 48px;
+    letter-spacing: 2px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+.offer__text {
+    font-size: 14px;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    width: 220px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(233, 186, 46);
+    transition: all 0.5;
+}
+
+.btn:hover {
+    background-color: rgb(249, 194, 31);
+    box-shadow: 10px 10px 10px grey;
+}
+
+.header__img {
+    width: 480px;
+}
+
+.main {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.main__title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.main__block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blocks {
+    text-align: center;
+    font-size: 14px;
+    width: 25%;
+    animation: fadeInBlocks 1.5s ease-in-out forwards infinite;
+}
+
+.blocks *:not(h3) {
+    color: rgb(178, 173, 190); 
+}
+
+.blocks img {
+    margin-bottom: 30px;
+}
+
+.form {
+    background-color: rgb(236,243,248);
+    height: 500px;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.form__title {
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.form__fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__fields input,
+.form__fields button {
+    width: 250px;
+}
+
+.form__fields input {
+    width: 250px;
+    height: 30px;
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
+.form__fields input::placeholder {
+    padding-left: 20px; 
+}
+
+.form__fields button {
+    width: 258px;
+    height: 45px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    background-color: rgb(233, 186, 46);
+    border: none; 
+    outline: none; 
+    cursor: pointer; 
+    transition: all 0.5s;
+}
+
+.form__fields button:hover {
+    background-color: rgb(249, 194, 31);
+    box-shadow: 2px 2px 2px grey; 
+}
+
+.footer {
+    background: linear-gradient(to bottom, rgba(30,90,157,1) 10%, rgba(70,70,221,1) 50%, rgba(35,126,203,1) 100%, rgba(118,180,229,1) 100%);
+    color: white;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.footer p {
+    font-size: 14px;
+    animation: pulseFooter 2s infinite;
+}
+
+.footer small {
+    font-size: 10px; 
+}
+
+.new-form {
+    background-color: rgb(179, 179, 179);
+    height: 500px;
+    margin-top: 50px;
+}
+
+.new-form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.new-form__title {
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.new-form__fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-form__fields input,
+.new-form__fields textarea,
+.new-form__fields select,
+.new-form__fields button {
+    width: 250px;
+    margin-bottom: 16px;
+}
+
+.new-form__fields input[type="date"],
+.new-form__fields input[type="time"],
+.new-form__fields select {
+    width: 254px; 
+}
+
+
+.new-form__fields button {
+    height: 45px;
+    font-size: 14px;
+    background-color: rgb(233, 186, 46);
+    border: none; 
+    outline: none; 
+    cursor: pointer; 
+    transition: all 0.5s;
+}
+
+.new-form__fields button:hover {
+    background-color: rgb(249, 194, 31);
+    box-shadow: 2px 2px 2px grey; 
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 80%; 
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .offer {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .header__img {
+        width: 60%;
+        margin-top: 40px;
+    }
+
+    .main__block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blocks {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 80%; 
+    }
+
+    .form__fields {
+        width: 80%;
+    }
+
+    .form__fields input,
+    .form__fields button {
+    width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%; 
+    }
+
+    .form__fields {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 80%; 
+    }
+
+    .form__fields {
+        width: 80%;
+    }
+    
+    .offer__text {
+        width: 70%
+    }
+
+    .form__title {
+        width: 60%
+    }
+
+    .title__span {
+        width: 60%
+    }
+
+    .title {
+        width: 75%;
+    }
+
+    .btn {
+        width: 60%;
+    }
+
+}
+
+/* Блок анимации */
+
+@keyframes fadeInBlocks {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseFooter {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
